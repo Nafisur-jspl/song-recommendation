@@ -136,6 +136,12 @@ def get_title(h5,songidx=0):
     """
     return h5.root.metadata.songs.cols.title[songidx]
 
+def get_genre(h5,songidx=0):
+    """
+    Get title from a HDF5 song file, by default the first song in it
+    """
+    return h5.root.metadata.songs.cols.genre[songidx]
+
 def get_track_7digitalid(h5,songidx=0):
     """
     Get track 7digital id from a HDF5 song file, by default the first song in it
